@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Global */
+
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+
+.headerInner {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	padding-top: 50px;
+	width:100%;
+	margin-bottom: 10px;
+
+}
+
+.headerLogo {
+	width:15%;
+	height:15%;
+}
+.myName {
+    width: 85%;
+    text-align: right;
+}
+
+.header-image-container {
+	background: url(images/travel-medium.jpeg) no-repeat fixed center/cover;	
+	height: 320px;
+	width: 100%;
+	margin-top: 25px;
+}
+#header-image-text {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 2.5em;
+	color: #fff;
+	text-shadow: 4px 4px 2px #000;
+	vertical-align: middle;
+	line-height: 8;
+}
+
+.header-image {
+	margin-top: 25px;
+
+}
+
+/* Articles Section */
+
+.places-section {
+	margin-bottom: 20px;;
+	margin-top: 25px;
+
+}
+
+.places-container {
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+}
+
+.article-container {
+	width: 33,33333333%;
+}
+
+.article-image {
+	width: 260px;
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+.article-name {
+	text-align: center;
+}
+
+/* Breackpoints */
+
+@media screen and (max-width: 400px) {
+	
+	.header-image-container {
+		max-height: 200px;
+	} 
+	main, .headerMain, .places-section {
+		min-width: 260px;
+	}		
+	#header-image-text {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 660px) {
+
+	main, .headerMain, .places-section {
+		min-width: 260px;
+	}
+}
+
+@media screen and (min-width: 661px) and(max-width: 850px) {	
+	#header-image-text {
+		font-size: 2em;
+		line-height: 9.5;
+	}
+	.contentMain {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 850px) {
+	.article-container {
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}	
+	.headerMain,.contentMain {	
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
+@media screen and (min-width: 851px) {
+main, .headerMain, .places-section {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
